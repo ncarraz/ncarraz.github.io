@@ -3,82 +3,105 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
+@article{rakotonirina2023can,
+  title={Can discrete information extraction prompts generalize across language models?},
+  author={Rakotonirina, Nathana{\"e}l Carraz and Dess{\`\i}, Roberto and Petroni, Fabio and Riedel, Sebastian and Baroni, Marco},
+  journal={ICLR},
+  year={2023},
+  preview={universal_prompt.png},
   dimensions={true},
-  selected={true}
+  selected={true},
+  code={https://github.com/ncarraz/prompt_generalization},
+  pdf={https://openreview.net/pdf?id=sbWVtxq8-zE},
+  abstract={We study whether automatically-induced prompts that effectively extract information from a language model can also be used, out-of-the-box, to probe other language models for the same information. After confirming that discrete prompts induced with the AutoPrompt algorithm outperform manual and semi-manual prompts on the slot-filling task, we demonstrate a drop in performance for AutoPrompt prompts learned on a model and tested on another. We introduce a way to induce prompts by mixing language models at training time that results in prompts that generalize well across models. We conduct an extensive analysis of the induced prompts, finding that the more general prompts include a larger proportion of existing English words and have a less order-dependent and more uniform distribution of information across their component tokens. Our work provides preliminary evidence that it's possible to generate discrete prompts that can be induced once and used with a number of different models, and gives insights on the properties characterizing such prompts.}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@article{dessi2023cross,
+  title={Cross-Domain Image Captioning with Discriminative Finetuning},
+  author={Dess{\`\i}, Roberto and Bevilacqua, Michele and Gualdoni, Eleonora and Rakotonirina, Nathana{\"e}l Carraz and Franzon, Francesca and Baroni, Marco},
+  journal={CVPR},
+  pages={6935--6944},
+  year={2023},
+  selected={true},
+  preview={eme_cap.png},
+  code={https://github.com/robertodessi/EGG/tree/rll/egg/zoo/emergent_captioner},
+  pdf={https://openaccess.thecvf.com/content/CVPR2023/papers/Dessi_Cross-Domain_Image_Captioning_With_Discriminative_Finetuning_CVPR_2023_paper.pdf},
+  abstract={Neural captioners are typically trained to mimic human-generated references without optimizing for any specific communication goal, leading to problems such as the generation of vague captions. In this paper, we show that fine-tuning an out-of-the-box neural captioner with a self-supervised discriminative communication objective helps to recover a plain, visually descriptive language that is more informative about image contents. Given a target image, the system must learn to produce a description that enables an out-of-the-box text-conditioned image retriever to identify such image among a set of candidates. We experiment with the popular ClipCap captioner, also replicating the main results with BLIP. In terms of similarity to ground-truth human descriptions, the captions emerging from discriminative finetuning lag slightly behind those generated by the non-finetuned model, when the latter is trained and tested on the same caption dataset. However, when the model is used without further tuning to generate captions for out-of-domain datasets, our discriminatively-finetuned captioner generates descriptions that resemble human references more than those produced by the same captioner without finetuning. We further show that, on the Conceptual Captions dataset, discriminatively finetuned captions are more helpful than either vanilla ClipCap captions or ground-truth captions for human annotators tasked with an image discrimination task.}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@article{jacobs2023towards,
+  title={Towards hate speech detection in low-resource languages: Comparing ASR to acoustic word embeddings on Wolof and Swahili},
+  author={Jacobs, Christiaan and Rakotonirina, Nathana{\"e}l Carraz and Chimoto, Everlyn Asiko and Bassett, Bruce A and Kamper, Herman},
+  journal={INTERSPEECH},
+  year={2023},
+  selected={true},
+  pdf={https://arxiv.org/pdf/2306.00410.pdf},
+  preview={speech_emb.png},
+  abstract={We consider hate speech detection through keyword spotting on radio broadcasts. One approach is to build an automatic speech recognition (ASR) system for the target low-resource language. We compare this to using acoustic word embedding (AWE) mod- els that map speech segments to a space where matching words have similar vectors. We specifically use a multilingual AWE model trained on labelled data from well-resourced languages to spot keywords in data in the unseen target language. In con- trast to ASR, the AWE approach only requires a few keyword exemplars. In controlled experiments on Wolof and Swahili where training and test data are from the same domain, an ASR model trained on just five minutes of data outperforms the AWE approach. But in an in-the-wild test on Swahili radio broadcasts with actual hate speech keywords, the AWE model (using one minute of template data) is more robust, giving similar perfor- mance to an ASR system trained on 30 hours of labelled data.}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@article{zameshina2022fairness,
+  title={Fairness in generative modeling: do it unsupervised!},
+  author={Zameshina, Mariia and Teytaud, Olivier and Teytaud, Fabien and Hosu, Vlad and Rakotonirina, Nathana{\"e}l Carraz and Najman, Laurent and Wagner, Markus},
+  journal={GECCO},
+  pages={320--323},
+  year={2022},
+  selected={true},
+  pdf={https://dl.acm.org/doi/pdf/10.1145/3520304.3528992},
+  abstract={We design general-purpose algorithms for addressing fairness issues and mode collapse in generative modeling. More precisely, to design fair algorithms for as many sensitive variables as possible, including variables we might not be aware of, we assume no prior knowledge of sensitive variables: our algorithms use unsupervised fairness only, meaning no information related to the sensitive variables is used for our fairness-improving methods. All images of faces (even generated ones) have been removed to mitigate legal risks.}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@article{rakotonirina2021many,
+  title={Many-Objective Optimization for Diverse Image Generation},
+  author={Rakotonirina, Nathana{\"e}l Carraz and Rasoanaivo, Andry and Najman, Laurent and Kungurtsev, Petr and Rapin, Jeremy and Teytaud, Fabien and Roziere, Baptiste and Teytaud, Olivier and Wagner, Markus and Wong, Pak-Kan and others},
+  year={2021},
+  journal={ArXiv preprint},
+  selected={true},
+  preview={many_objective.png},
+  pdf={https://hal.science/hal-03425742/document},
+  abstract={In image generation, where diversity is critical, people can express their preferences by choosing among several proposals. Thus, the image generation system can be refined to satisfy the user's needs. In this paper, we focus on multi-objective optimization as a tool for proposing diverse solutions. Multiobjective optimization is the area of research that deals with optimizing several objective functions simultaneously. In particular, it provides numerous solutions corresponding to trade-offs between different objective functions. The goal is to have enough diversity and quality to satisfy the user. However, in computer vision, the choice of objective functions is part of the problem: typically, we have several criteria, and their mixture approximates what we need. We propose a criterion for quantifying the performance in multi-objective optimization based on cross-validation: when optimizing n−1 of the n criteria, the Pareto front should include at least one good solution for the removed n th criterion. After providing evidence for the validity and usefulness of the proposed criterion, we show that the diversity provided by multiobjective optimization is helpful in diverse image generation, namely super-resolution and inspirational generation.}
 }
+
+@article{rakotonirina2021self,
+  title={Self-attention for audio super-resolution},
+  author={Rakotonirina, Nathana{\"e}l Carraz},
+  journal={MLSP},
+  pages={1--6},
+  year={2021},
+  selected={true},
+  preview={audio_super.png},
+  pdf={https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9596082},
+  organization={IEEE},
+  code={https://github.com/ncarraz/AFILM},
+  abstract={Convolutions operate only locally, thus failing to model global interactions. Self-attention is, however, able to learn representations that capture long-range dependencies in se- quences. We propose a network architecture for audio super-resolution that combines convolution and self-attention. Attention-based Feature-Wise Linear Modulation (AFiLM) uses self-attention mechanism instead of recurrent neural net- works to modulate the activations of the convolutional model. Extensive experiments show that our model outperforms existing approaches on standard benchmarks. Moreover, it allows for more parallelization resulting in significantly faster training.}
+}
+
+@article{roziere2021tarsier,
+  title={Tarsier: Evolving noise injection in super-resolution gans},
+  author={Roziere, Baptiste and Rakotonirina, Nathana{\"e}l Carraz and Hosu, Vlad and Rasoanaivo, Andry and Lin, Hanhe and Couprie, Camille and Teytaud, Olivier},
+  journal={ICPR},
+  pages={7028--7035},
+  year={2021},
+  selected={true},
+  organization={IEEE},
+  code={https://github.com/ncarraz/ESRGANplus},
+  pdf={https://arxiv.org/pdf/2009.12177},
+  preview={tarsier.png},
+  abstract={Super-resolution aims at increasing the resolution and level of detail within an image. The current state of the art in general single-image super-resolution is held by NESRGAN+, which injects a Gaussian noise after each residual layer at training time. In this paper, we harness evolutionary methods to improve NESRGAN+ by optimizing the noise injection at inference time. More precisely, we use Diagonal CMA to optimize the injected noise according to a novel criterion combining quality assessment and realism. Our results are validated by the PIRM perceptual score and a human study. Our method outperforms NESRGAN+ on several standard super-resolution datasets. More generally, our approach can be used to optimize any method based on noise injection.}
+}
+
+@article{rakotonirina2020esrgan+,
+  title={ESRGAN+: Further improving enhanced super-resolution generative adversarial network},
+  author={Rakotonirina, Nathana{\"e}l Carraz and Rasoanaivo, Andry},
+  journal={ICASSP},
+  pages={3637--3641},
+  year={2020},
+  organization={IEEE},
+  selected={true},
+  preview={esrganplus.png},
+  pdf={https://arxiv.org/pdf/2001.08073.pdf},
+  code={https://github.com/ncarraz/ESRGANplus},
+  abstract={Enhanced Super-Resolution Generative Adversarial Network (ESRGAN) is a perceptual-driven approach for single image super-resolution that is able to produce photorealistic images. Despite the visual quality of these generated images, there is still room for improvement. In this fashion, the model is extended to further improve the perceptual quality of the im- ages. We have designed a network architecture with a novel basic block to replace the one used by the original ESRGAN. Moreover, we introduce noise inputs to the generator net- work in order to exploit stochastic variation. The resulting images present more realistic textures.}
+}
+
